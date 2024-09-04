@@ -1,0 +1,103 @@
+/* src/components/CourseSection.css */
+.course-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    box-sizing: border-box; /* Ensure padding is included in height/width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ensure the container does not exceed the viewport width */
+  }
+  
+  .course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .course-card {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .course-card {
+      width: 160px;
+      height: 160px;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .course-card {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-card {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .section-title {
+      font-size: 1.2rem;
+    }
+  }
+  

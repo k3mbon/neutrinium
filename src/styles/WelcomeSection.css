@@ -1,0 +1,107 @@
+/* src/components/WelcomeSection.css */
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    box-sizing: border-box; /* Ensure padding is included in height/width */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .text-container {
+    flex: 1;
+    max-width: 600px; /* Limit the maximum width of the text container */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .text-container h1 {
+    font-size: 2.5rem; /* Adjust size for better visibility */
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem; /* Adjust size for readability */
+    line-height: 1.6;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .text-container h1 {
+      font-size: 2rem; /* Slightly smaller on larger tablets and small desktops */
+    }
+  
+    .text-container p {
+      font-size: 1rem; /* Slightly smaller on larger tablets and small desktops */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .welcome-section {
+      flex-direction: column;
+      height: auto; /* Allow height to adjust based on content */
+    }
+  
+    .text-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .image-container {
+      display: block; /* Stack the image below text on medium screens */
+    }
+  
+    .image-container img {
+      width: 80%; /* Scale down image on medium screens */
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text-container h1 {
+      font-size: 1.8rem; /* Adjust font size for small tablets and large phones */
+    }
+  
+    .text-container p {
+      font-size: 0.9rem; /* Adjust font size for small tablets and large phones */
+    }
+  
+    .image-container img {
+      width: 100%; /* Full width for small tablets and large phones */
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-container h1 {
+      font-size: 1.5rem; /* Smaller font size for phones */
+    }
+  
+    .text-container p {
+      font-size: 0.8rem; /* Smaller font size for phones */
+    }
+  
+    .image-container img {
+      width: 100%; /* Full width for phones */
+      height: auto;
+    }
+  }
+  
