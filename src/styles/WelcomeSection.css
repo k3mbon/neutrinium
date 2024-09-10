@@ -5,10 +5,8 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 100vh; /* Full viewport height */
-    width: 100vw;  /* Full viewport width */
+    width: 100%;  /* Full viewport width */
     box-sizing: border-box; /* Ensure padding is included in height/width */
     overflow: hidden; /* Prevent overflow */
   }

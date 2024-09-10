@@ -1,0 +1,79 @@
+/* src/styles/PartnersSection.css */
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  background-color: #f0f0f0; /* Background color */
+  overflow: hidden; /* Hide overflow */
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.partners-title {
+  font-size: 2rem; /* Adjust the size as needed */
+  margin-bottom: 20px; /* Space between title and marquee */
+  color: #333; /* Text color */
+  text-align: center;
+}
+
+/* Marquee container */
+.marquee {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width of the viewport */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Marquee content */
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite; /* Adjust the duration to make it slower */
+}
+
+/* Partner images */
+.partner-image {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  margin: 0 20px; /* Space between images */
+  object-fit: contain;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+      transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+      transform: translateX(-100%); /* End at the left */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .partner-image {
+      width: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .partner-image {
+      width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-image {
+      width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-image {
+      width: 60px;
+  }
+}
