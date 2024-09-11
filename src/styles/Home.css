@@ -1,149 +1,175 @@
 /* Welcome Section styles */
 .welcome-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 2rem; /* Space between columns */
-    align-items: center;
-    padding: 2rem;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem; /* Space between columns */
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-container {
+  /* Styles for the text container */
+}
+
+.text-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  /* Add text-shadow for a subtle effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient animation */
+.gradient-text {
+  background: linear-gradient(270deg, #a2c2e1, #005b96); /* Pastel light blue and pastel dark blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: bold;
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 0%;
   }
-  
-  .text-container {
-    /* Styles for the text container */
+  50% {
+      background-position: 100% 100%;
   }
-  
-  .text-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  100% {
+      background-position: 0% 0%;
   }
-  
-  .text-container p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  .image-container {
-    /* Styles for the image container */
-  }
-  
-  .image-container img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    justify-items: right;
-  }
-  
-  /* Sponsor Section styles */
-  .sponsor-section {
-    text-align: center; /* Center text and images */
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .sponsor-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .sponsor-container {
-    display: flex;
-    justify-content: center; /* Center the sponsor images */
-    gap: 1rem; /* Space between sponsor images */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  }
-  
-  .sponsor-container a {
-    display: block;
-  }
-  
-  .sponsor-container img {
-    max-width: 150px; /* Adjust as needed */
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .sponsor-container img:hover {
-    transform: scale(1.05); /* Add hover effect */
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .welcome-section {
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.image-container {
+  /* Styles for the image container */
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  justify-items: right;
+}
+
+/* Sponsor Section styles */
+.sponsor-section {
+  text-align: center; /* Center text and images */
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sponsor-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sponsor-container {
+  display: flex;
+  justify-content: center; /* Center the sponsor images */
+  gap: 1rem; /* Space between sponsor images */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.sponsor-container a {
+  display: block;
+}
+
+.sponsor-container img {
+  max-width: 150px; /* Adjust as needed */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-container img:hover {
+  transform: scale(1.05); /* Add hover effect */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .welcome-section {
       grid-template-columns: 1fr; /* Single column layout on small screens */
       text-align: center;
-    }
-  
-    .text-container, .image-container {
+  }
+
+  .text-container, .image-container {
       margin-bottom: 1rem;
-    }
-  
-    .image-container img {
+  }
+
+  .image-container img {
       max-width: 100%;
-    }
-  
-    .sponsor-container {
+  }
+
+  .sponsor-container {
       flex-direction: column; /* Stack sponsor images vertically on small screens */
       align-items: center; /* Center align sponsor images */
-    }
-  
-    .sponsor-container img {
-      max-width: 100px; /* Smaller max-width for mobile */
-    }
   }
-  
+
+  .sponsor-container img {
+      max-width: 100px; /* Smaller max-width for mobile */
+  }
+}
 
 /* Perspective Section styles */
 .perspective-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 2rem; /* Space between columns */
-    align-items: center;
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .gif-container {
-    /* Styles for the GIF container */
-  }
-  
-  .gif-container img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .description-container {
-    /* Styles for the description container */
-  }
-  
-  .description-container h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .description-container p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .perspective-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem; /* Space between columns */
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gif-container {
+  /* Styles for the GIF container */
+}
+
+.gif-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description-container {
+  /* Styles for the description container */
+}
+
+.description-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .perspective-section {
       grid-template-columns: 1fr; /* Single column layout on small screens */
       text-align: center;
-    }
-  
-    .gif-container, .description-container {
-      margin-bottom: 1rem;
-    }
-  
-    .gif-container img {
-      max-width: 100%;
-    }
   }
+
+  .gif-container, .description-container {
+      margin-bottom: 1rem;
+  }
+
+  .gif-container img {
+      max-width: 100%;
+  }
+}
+
 /* Course Section styles */
 .course-section {
   padding: 2rem;
@@ -198,119 +224,68 @@
 
 /* Get Started Section styles */
 .get-started-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-  }
-  
-  .get-started-text {
-    flex: 1;
-    max-width: 50%; /* Ensure text takes up half the width */
-    padding-right: 2rem;
-  }
-  
-  .get-started-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .get-started-text p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .study-now-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .study-now-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  .get-started-image {
-    flex: 1;
-    max-width: 50%; /* Ensure image takes up half the width */
-  }
-  
-  .get-started-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Responsive styles for various devices */
-  @media (max-width: 768px) {
-    .get-started-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.get-started-text {
+  flex: 1;
+  max-width: 50%; /* Ensure text takes up half the width */
+  padding-right: 2rem;
+}
+
+.get-started-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.get-started-text p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.study-now-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.study-now-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.get-started-image {
+  flex: 1;
+  max-width: 50%; /* Ensure image takes up half the width */
+}
+
+.get-started-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styles for various devices */
+@media (max-width: 768px) {
+  .get-started-section {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .get-started-text {
+  }
+
+  .get-started-text {
       max-width: 100%;
       padding-right: 0;
       padding-bottom: 1rem;
-    }
-  
-    .get-started-image {
-      max-width: 100%;
-    }
   }
-  
 
- /* Footer Section styles */
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #f1f1f1;
-    position: relative; /* Added to help with positioning the footer-bottom */
+  .get-started-image {
+      max-width: 100%;
   }
-  
-  .footer-column {
-    flex: 1;
-    padding: 10px;
-    min-width: 200px; /* Adjust as needed for responsiveness */
-  }
-  
-  .footer-logo {
-    max-width: 150px; /* Adjust as needed */
-  }
-  
-  .footer-column h3 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-column ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    background-color: #f1f1f1; /* Same as the footer background */
-    overflow-x: hidden;
-    color: #333;
-  }
-  
+}

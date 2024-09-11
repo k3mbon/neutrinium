@@ -94,7 +94,7 @@ const Home = () => {
     <div className="home-container">
       <section className="welcome-section">
         <div className="text-container">
-          <h1>Welcome to Neutrinium</h1>
+          <h1>Welcome to <span className="gradient-text">Neutrinium</span></h1>
           <p>
             At Neutrinium, we are dedicated to empowering self-learners with the tools and resources to master STEM subjects. Our platform offers a comprehensive range of educational materials, interactive lessons, and engaging activities to help you excel in science, technology, engineering, and mathematics.
           </p>
@@ -157,39 +157,6 @@ const Home = () => {
           <img src="/path/to/get-started-image.jpg" alt="Get Started" />
         </div>
       </section>
-
-      <footer className="footer-container">
-        <div className="footer-column">
-          <img src="/path/to/your/logo.jpg" alt="Brand Logo" className="footer-logo" />
-        </div>
-        <div className="footer-column">
-          <h3>About</h3>
-          <ul>
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/open-source">Open Source</a></li>
-            <li><a href="/academic">Academic</a></li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Support</h3>
-          <ul>
-            <li><a href="/paypal">Paypal</a></li>
-            <li><a href="/bitcoin">Bitcoin</a></li>
-            <li><a href="/bank-transfer">Bank Transfer</a></li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Help Center</h3>
-          <ul>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
-            <li><a href="/license-agreement">License Agreement</a></li>
-          </ul>
-        </div>
-        <div className="footer-bottom">
-          <p>&copy; Neutrinium {currentYear}</p>
-        </div>
-      </footer>
     </div>
   );
 };

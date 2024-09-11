@@ -1,0 +1,48 @@
+/* General styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 100px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensures it floats on top of other content */
+  }
+  
+  /* Logo styling */
+  .navbar-logo .logo {
+    max-height: 40px; /* Adjust the logo size as needed */
+    max-width: 100px; /* Ensure the logo scales properly */
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  
+  /* Button styling */
+  .navbar-button {
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    border: none;
+    border-radius: 25px; /* Rounded edges for buttons */
+    padding: 10px 20px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+  }
+  
+  /* Active button styling */
+  .navbar-button.active {
+    background: rgba(0, 123, 255, 0.8); /* Change background color when active */
+    color: #fff;
+  }
+  
+  /* Hover effect for buttons */
+  .navbar-button:hover {
+    background: rgba(255, 255, 255, 0.8); /* Slightly more opaque on hover */
+  }
+  
