@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Home.css'; // Ensure this is the correct path to your CSS file
+import videoBg from '../assets/bg.mp4';
 import Neutrinium from '../assets/logo.png'; // Adjust the path if needed
 import wmImage from '../assets/wm.png'; // Adjust the path if needed
 import FundamentalPhysics from '../assets/fundamental-physics.svg'; // Adjust the path if needed
@@ -92,6 +93,11 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      {/* Add the video background */}
+      <video className="background-video" autoPlay loop muted playsInline>
+      <source src={videoBg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <section className="welcome-section">
         <div className="text-container">
           <h1>Welcome to <span className="gradient-text">Neutrinium</span></h1>
@@ -128,7 +134,7 @@ const Home = () => {
           <img src="/path/to/your/gif.gif" alt="Learning Perspective" />
         </div>
         <div className="description-container">
-          <h2>Learning by Seeing from Different Perspectives</h2>
+          <h2>Learning by <span className="gradient-text">See</span>ing from <span className="gradient-text">Different</span> <span className="gradient-text">Perspectives</span></h2>
           <p>
             Discover how viewing problems and solutions from various angles can enhance your understanding and mastery of STEM subjects. Our interactive tools and visual aids are designed to provide you with a deeper insight into complex concepts, helping you to see the bigger picture and solve challenges more effectively.
           </p>

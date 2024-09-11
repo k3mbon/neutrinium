@@ -4,6 +4,7 @@ import Home from './pages/Home'; // Your Home component
 import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar';
+import OpenSource from './pages/OpenSource';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/open-source" element={<OpenSource />} />
       </Routes>
       <Footer/>
     </Router>

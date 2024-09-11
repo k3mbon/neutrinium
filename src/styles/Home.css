@@ -1,3 +1,15 @@
+
+/* Ensure other content is above the video */
+.home-container {
+  position: relative; /* Position relative to stack content above the video */
+}
+
+/* Ensure content does not overflow and is responsive */
+.open-source-container, .welcome-section, .sponsor-section, .perspective-section, .course-section, .get-started-section {
+  position: relative; /* Ensure sections are positioned correctly relative to the container */
+}
+
+
 /* Welcome Section styles */
 .welcome-section {
   display: grid;
@@ -5,12 +17,17 @@
   gap: 2rem; /* Space between columns */
   align-items: center;
   padding: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(1px) saturate(180%); /* Increase blur and saturation */
+  -webkit-backdrop-filter: blur(1px) saturate(180%); /* Safari compatibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
 }
 
-.text-container {
-  /* Styles for the text container */
-}
+
 
 .text-container h1 {
   font-size: 2.5rem;
@@ -25,7 +42,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   font-weight: bold;
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;
@@ -48,9 +64,6 @@
   line-height: 1.6;
 }
 
-.image-container {
-  /* Styles for the image container */
-}
 
 .image-container img {
   width: 100%;
@@ -127,10 +140,12 @@
   align-items: center;
   padding: 2rem;
   margin-bottom: 2rem;
-}
-
-.gif-container {
-  /* Styles for the GIF container */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15); /* Increased transparency */
+  backdrop-filter: blur(4px) saturate(90%); /* Subtle blur */
+  -webkit-backdrop-filter: blur(4px) saturate(90%); /* Safari compatibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
 }
 
 .gif-container img {
@@ -138,10 +153,6 @@
   max-width: 500px;
   height: auto;
   border-radius: 8px;
-}
-
-.description-container {
-  /* Styles for the description container */
 }
 
 .description-container h2 {
@@ -174,6 +185,12 @@
 .course-section {
   padding: 2rem;
   margin-bottom: 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15); /* Increased transparency */
+  backdrop-filter: blur(4px) saturate(90%); /* Subtle blur */
+  -webkit-backdrop-filter: blur(4px) saturate(90%); /* Safari compatibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
 }
 
 .tabs {
@@ -289,3 +306,4 @@
       max-width: 100%;
   }
 }
+

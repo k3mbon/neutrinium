@@ -1,11 +1,16 @@
 import React from 'react';
 import '../styles/AboutUs.css'; // Import the CSS file
+import videoBg from '../assets/bg.mp4';
 
 const currentYear = new Date().getFullYear();
 
 const AboutUs = () => {
   return (
     <div className="about-us-container">
+      <video className="background-video" autoPlay loop muted playsInline>
+      <source src={videoBg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <h1>About Us</h1>
       <p className="about-description">
         Our community is composed of professional educators from various branches of science such as biology, physics, chemistry, math, and engineering. We share a common goal: to make STEM learning fun, interactive, and accessible for everyone. Regardless of financial barriers, anyone with time and consistency can benefit from our work. We are not driven by profit, fame, or recognition; our sole intention is to uplift and enhance the quality of life through education. Our motto is: <strong>"From Community, For Community."</strong>

@@ -1,110 +1,120 @@
-/* Footer Section styles */
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    border-radius: 10px;
-    background-color: #f1f1f1;
-    position: relative;
-    justify-content: space-between; /* Adjusts column spacing on larger screens */
-    overflow-x: hidden;
-  }
-  
-  /* Footer columns */
-  .footer-column {
-    margin: 20px;
-    flex: 1;
-    padding: 10px;
-    min-width: 200px;
-  }
-  
-  /* Footer logo */
-  .footer-logo {
-    max-width: 150px;
-  }
-  
-  /* Column titles */
-  .footer-column h3 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  /* Footer links */
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-column ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Footer bottom text */
-  .footer-bottom {
-    text-align: center;
-    background-color: #f1f1f1;
-    color: #333;
-    width: 100%;
-  }
-  
-  /* Media Queries for responsiveness */
-  
-  /* Phones (up to 600px) */
-  @media (max-width: 600px) {
-    .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px) saturate(180%); /* Increase blur and saturation */
+  -webkit-backdrop-filter: blur(10px) saturate(180%); /* Safari compatibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+  position: relative;
+  z-index: 2; /* Ensure footer is above video */
+  justify-content: space-between; /* Adjust column spacing on larger screens */
+  overflow-x: hidden;
+  padding: 20px; /* Optional: Adds padding around the footer */
+}
+
+
+/* Footer columns */
+.footer-column {
+  margin: 20px;
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+/* Footer logo */
+.footer-logo {
+  max-width: 150px;
+}
+
+/* Column titles */
+.footer-column h3 {
+  margin-bottom: 10px;
+  color: #fff; /* Change to white for better contrast */
+}
+
+/* Footer links */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #fff; /* Change link color to white for better contrast */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  opacity: 1; /* On hover, increase opacity */
+}
+
+/* Footer bottom text */
+.footer-bottom {
+  text-align: center;
+  color: #fff; /* Change text color to white for contrast */
+  width: 100%;
+}
+
+/* Media Queries for responsiveness */
+
+/* Phones (up to 600px) */
+@media (max-width: 600px) {
+  .footer-container {
       flex-direction: column;
       align-items: center;
-    }
-    
-    .footer-column {
+  }
+
+  .footer-column {
       text-align: center;
       padding: 15px;
       min-width: 100%; /* Make each column full-width */
-    }
-    
-    .footer-logo {
+  }
+
+  .footer-logo {
       max-width: 100px;
-    }
-    
-    .footer-bottom {
+  }
+
+  .footer-bottom {
       padding: 15px;
       font-size: 14px;
-    }
   }
-  
-  /* Tablets (up to 900px) */
-  @media (max-width: 900px) {
-    .footer-column {
+}
+
+/* Tablets (up to 900px) */
+@media (max-width: 900px) {
+  .footer-column {
       flex: 1 1 45%; /* Columns take up half the width */
       min-width: 45%;
-    }
-    
-    .footer-container {
+  }
+
+  .footer-container {
       justify-content: center; /* Align columns centrally */
-    }
-    
-    .footer-logo {
+  }
+
+  .footer-logo {
       max-width: 120px;
-    }
   }
-  
-  /* Desktops and larger (above 900px) */
-  @media (min-width: 900px) {
-    .footer-container {
+}
+
+/* Desktops and larger (above 900px) */
+@media (min-width: 900px) {
+  .footer-container {
       justify-content: space-between; /* Columns are evenly spaced */
-    }
-    
-    .footer-column {
-      flex: 1 1 200px; /* Ensure consistent column width */
-    }
-    
-    .footer-logo {
-      max-width: 150px;
-    }
   }
-  
+
+  .footer-column {
+      flex: 1 1 200px; /* Ensure consistent column width */
+  }
+
+  .footer-logo {
+      max-width: 150px;
+  }
+}
