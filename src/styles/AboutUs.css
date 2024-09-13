@@ -1,28 +1,27 @@
 * {
-    margin-top: 40;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* Ensure the video covers the entire background */
+/* Ensure the video stays fixed and covers the entire background */
 .background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    filter: blur(5px);
     height: 100%;
-    object-fit: cover; /* This ensures the video covers the entire background */
-    z-index: -1; /* Place it behind the content */
+    object-fit: cover; /* Ensures the video covers the entire viewport */
+    filter: blur(5px); /* Optional blur for aesthetic */
     opacity: 0.7; /* Optional: Adjust opacity to make the content stand out */
-  }
+    position:fixed
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Ensures body takes up full height of the viewport */
     padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .about-us-container {
@@ -30,6 +29,7 @@ body {
     width: 100%;
     max-width: 1200px;
     padding-top: 40px; /* Padding to prevent the title from being hidden */
+    z-index: 1; /* Ensure the content is above the video */
 }
 
 h1 {
@@ -77,6 +77,7 @@ p {
     line-height: 1.5;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;

@@ -1,8 +1,9 @@
-
 /* Ensure other content is above the video */
 .home-container {
   position: relative; /* Position relative to stack content above the video */
 }
+
+
 
 /* Ensure content does not overflow and is responsive */
 .open-source-container, .welcome-section, .sponsor-section, .perspective-section, .course-section, .get-started-section {

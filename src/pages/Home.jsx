@@ -93,11 +93,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {/* Add the video background */}
-      <video className="background-video" autoPlay loop muted playsInline>
-      <source src={videoBg} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      
       <section className="welcome-section">
         <div className="text-container">
           <h1>Welcome to <span className="gradient-text">Neutrinium</span></h1>

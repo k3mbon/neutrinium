@@ -2,14 +2,12 @@ import React from 'react';
 import '../styles/AboutUs.css'; // Import the CSS file
 import videoBg from '../assets/bg.mp4';
 
-const currentYear = new Date().getFullYear();
 
 const AboutUs = () => {
   return (
     <div className="about-us-container">
       <video className="background-video" autoPlay loop muted playsInline>
-      <source src={videoBg} type="video/mp4" />
-        Your browser does not support the video tag.
+        <source src={videoBg} type="video/mp4" />
       </video>
       <h1>About Us</h1>
       <p className="about-description">
