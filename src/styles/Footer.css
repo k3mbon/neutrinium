@@ -18,7 +18,6 @@
 
 /* Footer columns */
 .footer-column {
-  margin: 20px;
   flex: 1;
   padding: 10px;
   min-width: 200px;
@@ -59,8 +58,9 @@
 /* Footer bottom text */
 .footer-bottom {
   text-align: center;
-  color: #fff; /* Change text color to white for contrast */
+  color: antiquewhite; /* Set color to antiquewhite */
   width: 100%;
+  padding-top: 10px; /* Optional: Add padding for spacing */
 }
 
 /* Media Queries for responsiveness */

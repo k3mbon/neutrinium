@@ -1,4 +1,4 @@
-.privacy-policy-container {
+.license-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,13 +6,13 @@
     min-height: 100vh;
   }
   
-  .privacy-policy-content {
+  .license-content {
     padding: 40px;
     max-width: 800px;
     width: 100%;
   }
   
-  .privacy-policy-title {
+  .license-title {
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.87);
     padding: 20px;
@@ -32,12 +32,13 @@
     margin-bottom: 20px;
   }
   
+  /* Media Queries for responsiveness */
   @media (max-width: 768px) {
-    .privacy-policy-content {
+    .license-content {
       padding: 20px;
     }
   
-    .privacy-policy-title {
+    .license-title {
       font-size: 1.75rem;
     }
   

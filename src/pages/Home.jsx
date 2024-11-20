@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Home.css'; // Ensure this is the correct path to your CSS file
-import videoBg from '../assets/bg.mp4';
-import Neutrinium from '../assets/logo.png'; // Adjust the path if needed
+import Neutrinium from '../assets/neutrinium-logo.png'; // Adjust the path if needed
 import wmImage from '../assets/wm.png'; // Adjust the path if needed
+import CLB from '../assets/CLB-01.png'; // Adjust the path if needed
 import FundamentalPhysics from '../assets/fundamental-physics.svg'; // Adjust the path if needed
 import PhysicalWave from '../assets/physical-wave.svg'; // Adjust the path if needed
 import Electrodynamics from '../assets/electrodynamics.svg'; // Adjust the path if needed
@@ -10,8 +10,18 @@ import ClassicalMechanics from '../assets/classical-mechanics.svg'; // Adjust th
 import ModernPhysics from '../assets/modern-physics.svg'; // Adjust the path if needed
 import NuclearPhysics from '../assets/nuclear-physics.svg'; // Adjust the path if needed
 import QuantumPhysics from '../assets/quantum-mechanics.svg'; // Adjust the path if needed
-
+import OrganicChemistry from '../assets/organic-chemistry.svg'; // Adjust the path if needed
+import OrganicBiology from '../assets/organic-biology.svg'; // Adjust the path if needed
+import Calculus from '../assets/calculus.svg'; // Adjust the path if needed
+import MathPhys from '../assets/mathematical-physics.svg'; // Adjust the path if needed
+import LinearAlgebra from '../assets/linear-algebra.svg'; // Adjust the path if needed
+import ElectromagneticWave from '../animations/ElectromagneticWave'
 const Home = () => {
+
+  useEffect(()=>{
+    document.title='Neutrinium | Study Differently'
+  })
+
   const [activeTab, setActiveTab] = useState('Physics');
 
   const renderTabContent = () => {
@@ -53,7 +63,7 @@ const Home = () => {
         return (
           <div className="tab-content">
             <div className="sub-tab">
-              <img src="/path/to/icon8.jpg" alt="Organic Chemistry" />
+              <img src={OrganicChemistry} alt="Organic Chemistry" />
               <span>Organic Chemistry</span>
             </div>
           </div>
@@ -62,7 +72,7 @@ const Home = () => {
         return (
           <div className="tab-content">
             <div className="sub-tab">
-              <img src="/path/to/icon9.jpg" alt="Organic Biology" />
+              <img src={OrganicBiology} alt="Organic Biology" />
               <span>Organic Biology</span>
             </div>
           </div>
@@ -71,15 +81,15 @@ const Home = () => {
         return (
           <div className="tab-content">
             <div className="sub-tab">
-              <img src="/path/to/icon10.jpg" alt="Calculus" />
+              <img src={Calculus} alt="Calculus" />
               <span>Calculus</span>
             </div>
             <div className="sub-tab">
-              <img src="/path/to/icon11.jpg" alt="Mathematical Physics" />
+              <img src={MathPhys} alt="Mathematical Physics" />
               <span>Mathematical Physics</span>
             </div>
             <div className="sub-tab">
-              <img src="/path/to/icon12.jpg" alt="Linear Algebra" />
+              <img src={LinearAlgebra} alt="Linear Algebra" />
               <span>Linear Algebra</span>
             </div>
           </div>
@@ -116,7 +126,7 @@ const Home = () => {
             <img src={wmImage} alt="Sponsor 1" />
           </a>
           <a href="https://sponsor2.com" target="_blank" rel="noopener noreferrer">
-            <img src="/path/to/sponsor2-logo.jpg" alt="Sponsor 2" />
+            <img src={CLB} alt="Sponsor 2" />
           </a>
           <a href="https://sponsor3.com" target="_blank" rel="noopener noreferrer">
             <img src="/path/to/sponsor3-logo.jpg" alt="Sponsor 3" />
@@ -127,7 +137,7 @@ const Home = () => {
 
       <section className="perspective-section">
         <div className="gif-container">
-          <img src="/path/to/your/gif.gif" alt="Learning Perspective" />
+          <ElectromagneticWave/>
         </div>
         <div className="description-container">
           <h2>Learning by <span className="gradient-text">See</span>ing from <span className="gradient-text">Different</span> <span className="gradient-text">Perspectives</span></h2>

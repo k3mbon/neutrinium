@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
+
+  useEffect(()=>{
+    document.title='Privacy Policy | Neutrinium'
+  })
+
   return (
     <div className="privacy-policy-container">
       <div className="privacy-policy-content">

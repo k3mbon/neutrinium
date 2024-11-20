@@ -14,7 +14,7 @@ const Navbar = () => {
     if (button === 'left') {
       navigate('/dashboard'); // Navigate to /dashboard
     } else if (button === 'right') {
-      navigate('/donate'); // Navigate to /donate
+      navigate('/pricing'); // Navigate to /pricing
     }
   };
 
@@ -38,7 +38,7 @@ const Navbar = () => {
         className={`navbar-button ${activeButton === 'right' ? 'active' : ''}`}
         onClick={() => handleClick('right')}
       >
-        Donate
+        Pricing
       </button>
     </nav>
   );

@@ -6,6 +6,10 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar';
 import OpenSource from './pages/OpenSource';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsCondition from './pages/TermsCondition';
+import Pricing from './pages/Pricing';
+import LicenseAgreement from './pages/LicenseAgreement';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/open-source" element={<OpenSource />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsCondition />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/license-agreement" element={<LicenseAgreement />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer/>
     </Router>

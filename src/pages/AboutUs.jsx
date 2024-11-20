@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/AboutUs.css'; // Import the CSS file
 
 
 const AboutUs = () => {
+
+  useEffect(()=>{
+    document.title='About Us | Neutrinium'
+  })
+
   return (
     <div className="about-us-container">
       <h1>About Us</h1>

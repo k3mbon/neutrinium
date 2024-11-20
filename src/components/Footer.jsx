@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Neutrinium from '../assets/neutrinium-logo.png'; // Adjust the path if needed
 import '../styles/Footer.css'; // Import the CSS file
 
 const currentYear = new Date().getFullYear();
@@ -8,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-column">
-        <img src="/path-to-your-logo/logo.jpg" alt="Brand Logo" className="footer-logo" />
+        <img src={Neutrinium} alt="Brand Logo" className="footer-logo" />
       </div>
       <div className="footer-column">
         <h3>About</h3>
@@ -30,7 +31,7 @@ const Footer = () => {
         <h3>Help Center</h3>
         <ul>
           <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-          <li><Link to="/terms-and-conditions">Terms and Conditions</Link></li>
+          <li><Link to="/terms-conditions">Terms and Conditions</Link></li>
           <li><Link to="/license-agreement">License Agreement</Link></li>
         </ul>
       </div>

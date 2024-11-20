@@ -1,0 +1,58 @@
+/* Container for the pricing message */
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Background gradient */
+  }
+  
+  /* Pricing title (heading) */
+  .pricing-title {
+    font-size: 3rem; /* Large heading size */
+    color: rgba(255, 255, 255, 0.87); /* Desired color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Pricing message */
+  .pricing-message {
+    font-size: 1.5rem; /* Adjusted for readability */
+    color: rgba(255, 255, 255, 0.87); /* Slightly translucent white text */
+    max-width: 600px; /* Optional: Limit width for readability */
+    line-height: 1.6;
+  }
+  
+  /* Bold emphasis */
+  .pricing-message strong {
+    color: #ffdd57; /* Bright color for highlighting "Paying Attention" */
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Small screens (up to 600px) */
+  @media (max-width: 600px) {
+    .pricing-title {
+      font-size: 2.5rem; /* Adjust for small screens */
+    }
+  
+    .pricing-message {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Medium screens (up to 900px) */
+  @media (max-width: 900px) {
+    .pricing-title {
+      font-size: 2.8rem;
+    }
+  
+    .pricing-message {
+      font-size: 1.4rem;
+    }
+  }
+  

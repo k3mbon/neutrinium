@@ -29,6 +29,7 @@ h1 {
 
 .about-description {
     font-size: 18px;
+    color: rgba(255, 255, 255, 0.87);
     margin-bottom: 40px;
     line-height: 1.6;
     max-width: 900px;
